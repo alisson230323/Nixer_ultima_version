@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2? family= Barlow+Condensed:wght@600 & display=swap');
+
+
+*{
+
+margin: 0%;
+padding:0%;
+font-family:'Barlow Condensed', sans-serif;
+
+
+}
+
+body{
+    background-color: black;
+    height: 10vh;
+    width: auto;
+}
+
+/* estilo para barra lateral*/
+
+
+.bar-lat{
+  margin: 0%;
+  padding: 0%;
+  max-width: 80px;
+  height: 100vh;
+  background-color: #3a0169;
+  position: absolute;
+  left: 100%;
+  transform: translate(-100%);
+
+ 
+}
+
+header nav a{
+text-decoration: none;
+color: #ffffff;    
+display: block;
+padding: 45px 40px 20px 15px ;
+border-bottom: 4px solid #1ae7e8 transparent;
+transition: all 10ms ease;
+}
+
+
+header nav a:hover{
+border-bottom: 4px solid #1ae7e8 ;
+}
+
+
+
+nav a li{
+color: transparent;
+font-size: 0px;
+padding: 20px 30px 20px 30px;
+background-color: #1ae7e8 transparent;
+list-style: none;
+float: right;
+transform: translate(-30%, -80%);
+transition: all 50ms ease;
+
+}
+
+
+header nav a:hover li{
+background-color: #1ae7e8;
+color: #000000;
+font-size: 20px;
+}
+
+
+
+
+header img{
+  padding: 10px 9px 11px 11px;
+  width: 60px;
+  height: 30px;
+}
+
+.engrane{
+  padding-top: 535px;
+
+}
+
+.block{
+  padding-top: 45px;
+  position: absolute;
+}
+
+
+.regre{
+  padding-top: -10px;
+}
+
+
+/*clases extra*/
+
+
+.borde{
+  top: 15%;
+  left:50%;
+  transform: translate(-52% , -5%);
+  color: #ffffff;
+  width: 70%;
+  height: 881px;
+  padding: 20px;
+  border:#59049e 5px solid ;
+  border-radius: 10px;
+  position: absolute;
+  overflow: hidden;
+  border-bottom-color:transparent ;
+}
+
+.myborde{
+  position: relative;
+}
+
+
+label{
+  color: #ffffff;
+  font-size: 30px;
+}
+
+
+
+.pelicula {
+  width: 40%;
+  height: 40%;
+  margin-left: 20px;
+}
+
+.img-reser{
+  width: 40%;
+  height: 60%;
+  position: relative;
+  margin: 20px 0px 0px 0px;
+}
+
+.despelicula {
+  width: 45%;
+  height: 60%;
+  position: relative;
+  left: 50%;
+  bottom: 80%;
+  font-size: 20px;
+}
+
+.pelicula h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+
+}
+
+
+
+
+/*ESTILOS PARA EL FORMULARIO */
+
+
+
+div select{
+  background-color: black;
+  color: aqua;
+  font-size: 27px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+select option{
+  background-color: #000000;
+  color: aqua;
+  text-align: center;
+}
+
+.form-1{
+  display: flex; 
+  margin-left: 280px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 40%;
+  height: 13%;
+  position: relative;
+  left: 30%;
+  bottom: 18%;
+}
+
+.form-1 div{
+  width: 40%;
+  height: 15%;
+  font-size: 30px;
+}
+
+.form-1 select{
+  margin: 10px;
+}
+
+.form-2{
+  display: flex; 
+  margin-top: 60px;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 13%;
+  justify-content: space-between;
+  position: relative;
+  bottom: 12%;
+  text-align: center;
+  margin: 80PX;
+}
+
+.form-2 div{
+  width: 30%;
+  height: 15%;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.form-3{
+  display: flex; 
+  margin-top: 60px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 13%;
+  position: relative;
+  left: 15%;
+  bottom: 10%;
+  text-align: center;
+}
+
+.form-3 div{
+  width: 50%;
+  height: 15%;
+  font-size: 30px;
+}
+
+.form-3 select{
+  margin: 10px;
+}
+
+.form-general{
+  position: absolute;
+  bottom: 27%;
+  left: 5%;
+}
+
+
+
+
+
+
+
+
+/*form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"], select, textarea {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+*/

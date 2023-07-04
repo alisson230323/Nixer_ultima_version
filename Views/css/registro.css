@@ -1,0 +1,246 @@
+/* Reinicio de padding de la página */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    background: black;
+}
+body::-webkit-scrollbar-thumb {
+    background: #1ae7e8;
+    border-radius: 10px;
+}
+/* cuerpo de la página */
+body {
+    background: #09000f;
+    background-size: contain;
+    font-family: sans-serif;
+    height: 200px;
+    min-height: 100vh;
+    background-attachment: fixed;
+
+}
+
+/* clase head*/
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #000000;
+    width: 100%;
+    z-index: 100;
+}
+
+/* clase menu*/
+.menu{
+    display: flex;
+    background: none;
+    position: relative;
+    margin-right: 10px;
+}
+
+/* clase logo -> a*/
+.logo a {
+    text-decoration: none;
+    color: #1ae7e8;
+    text-transform: uppercase;
+    margin-left: 40px;
+    font-size: 25px;
+}
+img {
+    border-style: none;
+    width: 100px;
+}
+
+/* clase menu -> a*/
+.menu a {
+    display: block;
+    padding: 20px 20px;
+    color: #1ae7e8;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* clase menu -> a(animación de puesta sobre el cursor) */
+.menu a:hover {
+    background: #190038;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    animation: mymove 1s infinite;
+}
+
+
+@keyframes mymove {
+    50% {background-color: #270057;}
+}
+
+/* clase header ajustar el inicio del contenido*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+}
+
+/* organización del contenido */
+.content {
+    height: 50px;
+    display: flow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilo de la clase title */
+.title {
+    text-align:center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #1ae7e8;
+    font-family: fantasy;
+}
+
+/* estilo del texto */
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1ae7e8;
+    padding: 0 20px;
+}
+/*registro*/
+.form-register{
+    width: 400px;
+    background: #24303C;
+    padding: 90px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-family: 'calibri';
+    color: #305e5e;
+    box-shadow: 7px 13px 37px #230042;
+    background: #1ae7e8(255, 255, 255, 0.2);
+
+}
+
+.form-register h4{
+    font-size: 23px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1ae7e8;
+}
+
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #1ae7e8;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a{
+    color: #1ae7e8;
+    text-decoration: none;
+}
+
+.form-register a:hover{
+    color: #008a8a;
+    text-decoration: underline;
+}
+
+input{
+    box-shadow: 0 0 5px #1ae7e8,
+                0 0 25px #1ae7e8,
+                0 0 50px #1ae7e8,
+                0 0 800px #1ae7e8;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px;
+    color: #ffffff;
+
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    background: #24303c;
+}
+input:hover{
+    background: #1ae7e8;
+    color: #ffffff;
+    box-shadow: 0 0 5px #230042,
+                0 0 25px #230042,
+                0 0 50px #230042,
+                0 0 800px #230042;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    margin-top: 70px;
+    width: 100%;
+    background:linear-gradient(#0f001b, #000000);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:570px;
+    padding: 3px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #1ae7e8;
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #757575;
+    margin-bottom: 2px;
+    text-align: left;
+}
+.pie-pagina .grupo-2{
+    background-color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

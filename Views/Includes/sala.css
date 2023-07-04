@@ -1,0 +1,69 @@
+
+.navbar-brand{
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #7001c6, 0 0 25px #7001c6, 0 0 50px #7001c6, 0 0 100px #7001c6;
+}
+
+.navbar-brand:hover{
+    color: #7001c6;
+    text-decoration: none;
+    
+}
+
+.navbar-morado{
+    background-color: #000;
+}
+
+.formulario h2{
+color: #000;
+text-align: center;
+text-transform: uppercase;
+text-shadow: 0 0 5px #7001c6, 0 0 25px #7001c6, 0 0 50px #7001c6, 0 0 100px #7001c6;
+}
+
+.form-group{
+padding: 10px;
+}
+
+.boton{
+    background-color: #7001c6;
+    border-color: purple; 
+  }
+  
+  .boton:hover {
+    background-color:rgba(97, 21, 93, 0.6);
+    color: #fff;
+    text-shadow: 0 0 5px #7001c6, 0 0 25px #7001c6, 0 0 50px #7001c6, 0 0 100px #7001c6;
+  }
+
+
+  .form-control{
+    border-color: #7001c6;
+  }
+
+  .boton-2{
+    background-color: #7001c6;
+    border-color: purple; 
+    color: #000; 
+  }
+
+  .boton-2:hover{
+    background-color:rgba(97, 21, 93, 0.6);
+    color: #fff;
+    text-shadow: 0 0 5px #7001c6, 0 0 25px #7001c6, 0 0 50px #7001c6, 0 0 100px #7001c6;
+  }
+
+  .form-group h2{
+    text-transform: uppercase;
+text-shadow: 0 0 5px #7001c6, 0 0 25px #7001c6, 0 0 50px #7001c6, 0 0 100px #7001c6;
+    text-align: center;
+  }
+  .tabla-border thead th {
+    color: #7001c6;
+    border-color: #000;
+}
+
+.tabla-border tbody td {
+    border-color: #000;
+}

@@ -1,0 +1,125 @@
+<section class="catalogo">
+    <a class="pelicula" href="Reservas.php">
+      <img src="img/01.jpg" alt="Pelicula 1">
+      <div class="informacion">
+        <h3>Pelicula 1</h3>
+        <p>Año de lanzamiento: 2020</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </a>
+    <a class="pelicula" href="#">
+      <img src="img/02.jpg" alt="Pelicula 2">
+      <div class="informacion">
+        <h3>Pelicula 2</h3>
+        <p>Año de lanzamiento: 2019</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </a>
+    <a class="pelicula" href="#">
+      <img src="img/03.webp" alt="Pelicula 3">
+      <div class="informacion">
+        <h3>Pelicula 3</h3>
+        <p>Año de lanzamiento: 2019</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </a>
+    <a class="pelicula" href="#">
+      <img src="img/04.jpg" alt="Pelicula 4">
+      <div class="informacion">
+        <h3>Pelicula 4</h3>
+        <p>Año de lanzamiento: 2019</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </a>
+    <a class="pelicula" href="#">
+      <img src="img/05.jpg" alt="Pelicula 5">
+      <div class="informacion">
+        <h3>Pelicula 5</h3>
+        <p>Año de lanzamiento: 2019</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </a>
+    <a class="pelicula" href="#">
+      <img src="img/06.jpg" alt="Pelicula 6">
+      <div class="informacion">
+        <h3>Pelicula 6</h3>
+        <p>Año de lanzamiento: 2019</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </a>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="borde">
+    <div class="pelicula">
+        <div class="pe">
+             <img src="img/gato1 (1).jpg" alt="" class="img-reser">
+        </div>
+        <div class="despelicula">
+            <h4>Gato Con Botas</h4>
+            <p>El Gato con Botas descubre que, debido a su pasión por la aventura, ha gastado ya 8 de sus 9 vidas. Por tanto, emprende un peligroso viaje en busca del legendario Último Deseo para solicitar que le restauren las vidas que ya perdió.</p>
+        </div>
+    </div>
+
+
+
+   
+    <?php
+ 
+    // Realizar la conexión a la base de datos y obtener los datos de la película seleccionada
+    $host = "localhost";
+    $user = "root";
+    $password = "";
+    $bd = "nixer";
+    
+    $conn = mysqli_connect($host, $user, $password, $bd);
+    if (!$conn) {
+        die("Error de conexión: " . mysqli_connect_error());
+    }
+    
+    
+    // Realizar la consulta de las reservas
+    $sqlReservas = "SELECT * FROM reservas";
+    $resultReservas = $conn->query($sqlReservas);
+    
+    
+    // Mostrar la tabla de reservas
+    echo "<h2>Reservas</h2>";
+    
+    if ($resultReservas->num_rows > 0) {
+        // Mostrar la tabla de reservas con estilos básicos
+        echo "<table class='reservas-table'>";
+        echo "<tr><th>ID Reserva</th><th>ID Función</th><th>ID Asiento</th><th>ID Usuario</th><th>Fecha Reserva</th><th>Acciones</th></tr>";
+    
+        // Recorrer los resultados y mostrar cada reserva
+        while ($reserva = $resultReservas->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $reserva['id_reserva'] . "</td>";
+            echo "<td>" . $reserva['id_funcion'] . "</td>";
+            echo "<td>" . $reserva['id_asiento'] . "</td>";
+            echo "<td>" . $reserva['id_usuario'] . "</td>";
+            echo "<td>" . $reserva['fecha_reserva'] . "</td>";
+            echo "<td><button onclick='editarReserva(" . $reserva['id_reserva'] . ")'>Editar</button> <button onclick='eliminarReserva(" . $reserva['id_reserva'] . ")'>Eliminar</button></td>";
+            echo "</tr>";
+        }
+    
+        echo "</table>";
+    
+    
+    } else {
+        echo "<p>No hay reservas.</p>";
+    }
+    
+    // Cerrar la conexión
+    $conn->close();
+    ?>
+    

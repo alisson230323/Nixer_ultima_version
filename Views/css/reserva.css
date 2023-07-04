@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2? family= Barlow+Condensed:wght@600 & display=swap');
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 10vh;
+  width: auto;
+}
+
+.bar-lat {
+  margin: 0%;
+  padding: 0%;
+  max-width: 80px;
+  height: 100vh;
+  background-color: #3a0169;
+  position: absolute;
+  left: 100%;
+  transform: translate(-100%);
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .bar-lat {
+    max-width: 100%;
+    height: auto;
+    min-height: 100vh; /* Agregado para expandir el color de fondo */
+    position: static;
+    transform: none;
+  }
+}
+
+
+
+
+header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  padding: 45px 40px 20px 15px;
+  border-bottom: 4px solid #1ae7e8 transparent;
+  transition: all 10ms ease;
+}
+
+header nav a:hover {
+  border-bottom: 4px solid #1ae7e8;
+}
+
+nav a li {
+  color: transparent;
+  font-size: 0px;
+  padding: 20px 30px 20px 30px;
+  background-color: #1ae7e8 transparent;
+  list-style: none;
+  float: right;
+  transform: translate(-30%, -80%);
+  transition: all 50ms ease;
+}
+
+header nav a:hover li {
+  background-color: #1ae7e8;
+  color: #000000;
+  font-size: 20px;
+}
+
+header img {
+  padding: 10px 9px 11px 11px;
+  width: 60px;
+  height: 30px;
+}
+
+/*.engrane {
+  padding-top: 535px;
+}*/
+
+.block {
+  padding-top: 45px;
+  position: absolute;
+}
+
+.regre {
+  padding-top: -10px;
+}
+
+/* clases extra */
+
+.img-cine {
+  position: absolute;
+  top: 3%;
+  left: 60%;
+  width: 200px;
+  height: 160px;
+}
+
+.borde {
+  top: 11%;
+  left: 50%;
+  transform: translate(-52%, -5%);
+  color: #ffffff;
+  width: 70%;
+  height: 863px;
+  padding: 20px;
+  border: #59049e 5px solid;
+  border-radius: 10px;
+  position: absolute;
+  overflow: hidden;
+  border-bottom-color: transparent;
+}
+
+.myborde {
+  position: relative;
+}
+
+label {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.pelicula {
+  width: 40%;
+  height: 40%;
+  margin-left: 20px;
+}
+
+.img-reser {
+  width: 40%;
+  height: 60%;
+  position: relative;
+  margin: 20px 0px 0px 0px;
+}
+
+.despelicula {
+  width: 45%;
+  height: 60%;
+  position: relative;
+  left: 45%;
+  bottom: 80%;
+  font-size: 20px;
+}
+
+.pelicula h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+.det_fun{
+ transform: translate(55% , -200%);
+ font-size: 25px ;
+
+}
+
+.sala{
+
+  font-size: 25px;
+  transform: translate(15%, -310%);
+}
+
+
+.asientos{
+  border: transparent 2px solid;
+  width: 45%;
+  height: 10%;
+  transform: translate(95%, -300%);
+  font-size: 25px;
+}
+
+
+/* ESTILOS PARA EL FORMULARIO */
+
+.form-general {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+}
+
+select {
+  background-color: black;
+  color: aqua;
+  font-size: 27px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 45%;
+  height: 45px;
+}
+
+select option {
+  background-color: #000000;
+  color: aqua;
+  text-align: center;
+}*/
+
+.form-1 {
+  display: flex;
+  margin-left: 280px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 40%;
+  height: 13%;
+  position: relative;
+  left: 30%;
+  bottom: 18%;
+}
+
+.form-1 div {
+  width: 40%;
+  height: 15%;
+  font-size: 30px;
+}
+
+.form-1 select {
+  margin: 10px;
+}
+
+.form-2 {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 13%;
+  position: relative;
+  left: 18%;
+  bottom: 12%;
+  text-align: center;
+}
+
+.form-2 div {
+  width: 30%;
+  height: 15%;
+  font-size: 30px;
+}
+
+.form-2 select {
+  margin: 10px;
+}
+
+.form-3 {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 13%;
+  position: relative;
+  left: 15%;
+  bottom: 10%;
+  text-align: center;
+}
+
+.form-3 div {
+  width: 50%;
+  height: 15%;
+  font-size: 30px;
+}
+
+.form-3 select {
+  margin: 10px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .bar-lat {
+    display: none;
+  }
+
+  .borde {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+  }
+
+  .form-general {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .form-1,
+  .form-2,
+  .form-3 {
+    left: 0;
+    right: 0;
+  }
+}
+
+
+
+
+
+
+
+/* Estilos para modales */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content1 {
+  background-color: #7101c7;
+  color: #f0ecec;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  position: relative;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.modal-content1 a {
+  position: relative;
+  padding-left: 99%;
+  margin-top: -15px;
+  bottom: 34px;
+}
+
+.modal-content {
+  background-color: #f0ecec;
+  margin: 15% auto;
+  margin-top: -15%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Aumentar el ancho al 50% */
+  max-width: 800px; /* Aumentar el máximo ancho a 800px */
+  position: relative;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 80%;
+    margin-top: -40px;
+  }
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content a {
+  color: #ffffff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.modal-content1 a {
+  color: #ffffff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.slide-in {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: 0.5s ease-out;
+}
+
+.slide-in.show {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.btn-reserva {
+  position: absolute;
+  width: 250px;
+  height: 80px;
+  font-size: 28px;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  color: white;
+  margin-top: -5%;
+  margin-left: 35%;
+  cursor: pointer;
+}
+
+.btn-reserva:hover {
+  background-color: #1ae7e8;
+  box-shadow: 0 0 5px #1ae7e8, 0 0 25px #1ae7e8, 0 0 50px #1ae7e8, 0 0 800px #1ae7e8;
+}
+
+/* Estilos modal de tarjeta de crédito */
+
+.nom-titu {
+  width: 290px;
+  height: 35px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  border: #888 1px solid;
+}
+
+.fecha-exp {
+  font-size: 15px;
+  width: 90px;
+  height: 35px;
+  border-radius: 5px;
+  border: #888 1px solid;
+  text-align: center;
+}
+
+.cod-seg {
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: #888 1px solid;
+  text-align: center;
+}
+
+.pos-nom {
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+.pos-num {
+  margin-left: 55%;
+  margin-top: -9.5%;
+}
+
+.pos-fe {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.pos-cod {
+  margin-left: 55%;
+  margin-top: -9.5%;
+}
+
+.modal-content h3 {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.reserver {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  background-color: #7000c7;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  color: white;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+
+/* Estilos responsive */
+
+@media (max-width: 768px) {
+  .modal-content1,
+  .modal-content {
+    width: 80%;
+    margin: 15% auto;
+  }
+  
+  .nom-titu,
+  .fecha-exp,
+  .cod-seg {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .pos-num,
+  .pos-cod {
+    margin-left: 0;
+  }
+  
+  .modal-content h3 {
+    margin-left: 0;
+  }
+  
+  .reserver {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content1,
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+  }
+  
+  .nom-titu,
+  .fecha-exp,
+  .cod-seg {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .pos-num,
+  .pos-cod {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  
+  .modal-content h3 {
+    margin-left: 0;
+  }
+  
+  .reserver {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tran-si {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.tran-si.show {
+  opacity: 1;
+}*/ 
+
+
+/* estilos modal 
+body .modal{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-modal:checked ~ .modal{
+  opacity: 1;
+  visibility: visible;
+} 
+
+#btn-modal1:checked ~ .modal{
+  opacity: 1;
+  visibility: visible;
+} 
+
+.contenedor8{
+  width: 792px;
+  height: 518px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+  transition: all 500ms ease;
+  position: relative;
+  transform: translateY(-30%);
+}
+#btn-modal:checked ~ .modal .contenedor8{
+  transform: translateY(0%);
+} 
+#btn-modal1:checked ~ .modal .contenedor8{
+  transform: translateY(0%);
+} 
+.contenedor8 header{
+  font-size: 25px;
+  padding: 10px;
+  background: #59049e ;
+  color: white;
+  font-size: 25px;
+  
+}
+.contenedor8 label{
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  color: aqua;
+  font-size: 20px;
+  cursor: pointer;
+}
+.contenido8{
+  width: 100%;
+  padding-top: 25px;
+}
+.contenido8 h3{
+ color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contenido8 p{
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.contenido8 input{
+  border-radius: 5px;
+    width: 210px;
+    height: 30px;
+    border: #b6b2b2 2px solid;
+}
+
+#btn-modal{
+  display: none;
+}
+#btn-modal1{
+  display: none;
+}
+.lbl-modal{
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+  .contenedor8{
+    width: 95%;
+  }
+}
+
+*/

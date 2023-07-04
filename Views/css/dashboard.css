@@ -1,0 +1,137 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: hsl(269, 93%, 5%);
+    font-family: sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+  }
+.box1{
+    width: 100%;
+    height: 60px;
+    background: rgb(0, 0, 0);
+}
+
+.box1 img{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box1 .back {
+    text-align: right;
+}
+
+.box1 .back a{
+    border-radius: 10px;
+    border: solid 2px white;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+    padding: 5px;
+}
+.box1 .back a:hover {
+    background: #0097cf;     
+}
+
+.menu {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.menu .categorias{
+    display: inline-block;
+    width: 260px;
+    height: 350px;
+    margin: 20px;
+    color: black;
+    background: #24303c;
+    box-shadow: 7px 13px 37px #230042;
+    border-radius: 10%;
+}
+
+.menu .categorias:hover{
+    background: #4c146d;
+}
+
+.menu .soporte{
+    display: inline-block;
+    width: 260px;
+    height: 350px;
+    margin: 20px;
+    color: black;
+    background: #24303c;
+    box-shadow: 7px 13px 37px #230042;
+    border-radius: 10%;
+}
+
+.menu .soporte:hover{
+    background: #4c146d;
+}
+
+.menu .reservas{
+    display: inline-block;
+    width: 260px;
+    height: 350px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    background: #24303c;
+    box-shadow: 7px 13px 37px #230042;
+    border-radius: 10%;
+}
+
+.menu .reservas:hover{
+    background: #4c146d;
+}
+
+.menu .vip{
+    align-items: center;
+    display: inline-block;
+    width: 260px;
+    height: 350px;
+    margin: 20px;
+    color:black;
+    background: #24303c;
+    box-shadow: 7px 13px 37px #230042;
+    border-radius: 10%;
+}
+
+.menu .vip:hover{
+    background: #4c146d;
+}
+
+.menu h2{
+    color: #0097cf;
+    position: relative;
+    top: 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.menu img{
+    position: relative;
+    top: 30px;
+    width: 170px;
+}
+
+.menu p{
+    color: #0097cf;
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: 70px;
+}
+
+footer img{
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    text-align: center;
+}
